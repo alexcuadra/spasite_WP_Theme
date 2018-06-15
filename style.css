@@ -1,0 +1,352 @@
+/*
+Theme Name: SpaSite
+Theme URI:
+Author: Alex Cuadra
+Author URI: elitedev.tech
+Version: 1.0
+License: GNU General Public License v2 or later
+Lciense URI: http://www.gnu.org/licences/gpl-2.0.html
+Tags: Spa, Beauty Salon, responsive, bootstrap4
+Text Domain: spasite
+
+*/
+
+body {
+    background-color: #f8f8f8;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  h2 span {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h3 span {
+    font-size: 3.6rem;
+  }
+  h2, h3 {
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    line-height: 2.4rem;
+  }
+  h2 span,
+  h3 span {
+    font-family: 'Italianno', cursive;
+    color: #5dc3ad;
+  }
+/** Sociales **/
+.sociales ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.sociales ul li {
+    position: relative;
+    display: inline-block;
+}
+.sociales ul li a::before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    color: #5dc3ad;
+}
+.sociales ul li a[href*="facebook.com"]::before{
+    content: '\f082';
+}
+.sociales ul li a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+.sociales ul li a[href*="instagram.com"]::before{
+    content: '\f16d';
+}
+.sociales ul li a[href*="pinterest.com"]::before{
+    content: '\f0d2';
+}
+.sociales ul li a[href*="youtube.com"]::before{
+    content: '\f16a';
+}
+
+/** Navegacion*/
+.navegacion {
+    background-color: #f2b185;
+  }
+  .navbar-toggler {
+      background-color: white;
+  }
+  @media (min-width:576px) {
+      .flex-sm-row {
+          width: 100%;
+      }
+  }
+  .bg-faded {
+      background-color: transparent;
+  }
+
+  nav.nav-principal {
+    background-image: url(img/border_horizontal.png),
+                      url(img/border_horizontal.png);
+    background-repeat: repeat-x;
+    background-position: 0px top, 0px bottom;
+
+  }
+
+
+
+  nav.nav-principal .nav-item {
+    transition: background-color .5s ease-in-out;
+  }
+
+  nav.nav-principal .nav-item .active{
+    background-color: #5dc3ad;
+    border-radius: 10px;
+}
+
+  nav.nav-principal .nav-item:hover {
+    background-color: #39a69b;
+  }
+  nav.nav-principal .nav-item .nav-link {
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-family:'Raleway', sans-serif;
+  }
+
+
+  /** Carousel **/
+.carousel .carousel-caption h3 {
+    font-family:'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+  }
+
+/** Servicios**/
+.imagen-servicio img{
+    border: 6px solid white;
+    -webkit-transition: transform .3s ease;
+    -ms-transition: transform .3s ease;
+    transition: transform .3s ease;
+  }
+  .imagen-servicio img:hover {
+    -webkit-transform: scale(1.2) rotate(10deg);
+    -ms-transform: scale(1.2) rotate(10deg);
+    transform: scale(1.2) rotate(10deg);
+  }
+  .servicio-info {
+    background-color: #ffffff;
+    margin-top: -5rem;
+  }
+  .servicio-info .btn-primary {
+    background-color: #5dc3ad;
+    border:none;
+    border-radius: 0;
+  }
+
+  /** Horarios **/
+.horario {
+    background-color: #f2b185;
+    color: #ffffff;
+  }
+  .horario h2 {
+    color: #ffffff;
+    font-size: 2rem;
+  }
+  .horario .table {
+      border: 2px solid #5dc3ad;
+  }
+  .horario .table thead {
+    background-color: #5dc3ad;
+  }
+  .horario .table td,
+  .horario .table thead th {
+    border: none;
+  }
+  .horario .table tbody tr td {
+    padding:.35rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .bg-horario{
+    background-image:url(img/bg_horarios.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 300px;
+  }
+/* Productos*/
+.productos .card{
+    border: none;
+  }
+  .productos .card a {
+    color: #000000;
+  }
+  .productos .card a:hover {
+    text-decoration: none;
+  }
+  .productos .card h3 {
+    color: #5dc3ad;
+    font-size: 1rem;
+  }
+  .productos .card p {
+    font-size: .8rem;
+  }
+  .productos .card p.precio {
+    font-size: 1.6rem;
+    color: #979797;
+  }
+
+  /** Citas **/
+.citas {
+    background-image: url(img/bg_citas.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+@media (min-width:992px) {
+    .citas {
+        background-size: cover;
+    }
+}
+.citas h3 {
+    color: #fff;
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+.citas p {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 2.4rem;
+}
+.citas .btn-primary {
+    background-color: #f2b185;
+    border: none;
+    border-radius: 0;
+    padding: 1rem 5rem;
+    font-family: 'Lato', sans-serif;
+}
+.citas .btn-primary:hover {
+    background-color: #68beb5;
+}
+
+/** Internas**/
+/** Nosotros **/
+.hero {
+    position: relative;
+}
+.hero h2 {
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    padding: 1rem 2rem 1rem 6rem;
+    background-color: #f2b185;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #fff;
+}
+.contenido-principal {
+    line-height: 2rem;
+}
+
+aside {
+    background-color: #f2b185;
+    color: #fff;
+}
+
+/** Servicios **/
+#servicios .card-header {
+    background-color: #5dc3ad;
+}
+#servicios .card-header h3 a {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+}
+#servicios .card-block {
+    font-size: 1.2rem;
+    line-height:2.4rem;
+}
+
+aside .cupon {
+    border:3px dashed white;
+}
+aside .cupon p {
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+}
+aside .cupon p span {
+    display: block;
+    font-size: 2rem;
+}
+
+/* Productos*/
+.productos .card{
+    border: none;
+  }
+  .productos .card a {
+    color: #000000;
+  }
+  .productos .card a:hover {
+    text-decoration: none;
+  }
+  .productos .card h3 {
+    color: #5dc3ad;
+    font-size: 1rem;
+  }
+  .productos .card p {
+    font-size: .8rem;
+  }
+  .productos .card p.precio {
+    font-size: 1.6rem;
+    color: #979797;
+  }
+
+/** Productos **/
+.card-columns {
+    -webkit-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: .75rem;
+    column-gap: .75rem;
+}
+@media (min-width:576px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+@media (min-width:768px) {
+    .card-columns {
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+/** Contacto **/
+.formulario-contacto {
+    border: 2px solid #9a9a9a;
+    background-color: #ffffff;
+}
+.formulario-contacto .btn-primary {
+    background-color: #8cd3cc;
+    border:none;
+    border-radius: 0;
+    padding: 1rem 6rem;
+}
+.formulario-contacto .btn-primary:hover {
+    background-color: #6bbdb5;
+    cursor: pointer;
+}
+
+.page-id-16 #schedule_widget-2{
+  display: none;
+}
+
+.page-id-14 #text-6{
+  display: none;
+
+}
